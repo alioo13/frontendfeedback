@@ -174,7 +174,9 @@ function Feedback() {
         onChange={handlefedbackinput}
         value={value.feedback}
         name="comments" 
+        required= "true"
         placeholder="Type your comment here !"></textarea>
+        
         <div>
         <button  className="buttondesing" type="submit">
         SEND FEEDBACK
