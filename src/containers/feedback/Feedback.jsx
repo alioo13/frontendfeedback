@@ -72,7 +72,7 @@ function Feedback() {
       console.log(res);
     })
     setShow(true);
-    // setvalue({...value, feedback: "",star1:"",star2:"",star3:""})
+    setvalue({...value, feedback: "",star1:"",star2:"",star3:""})
 
  
   }
@@ -162,9 +162,6 @@ function Feedback() {
           </div>
         </div>
 
-
-
-       
 
         <hr class="stylehr1" />
 
