@@ -150,7 +150,6 @@ function Feedback() {
         <label for="comments">
           <div className='rateexp'>  <p> Please leave a comment about your experience below :</p></div>
         </label>
-        {/* <input className='box' type='text' id="area" name="area" placeholder="Type your comment here !" ></input> */}
         <textarea cols="80" rows="8" id="comments" 
         onChange={handlefedbackinput}
         value={value.feedback}
