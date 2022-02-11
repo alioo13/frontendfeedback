@@ -12,7 +12,6 @@ import Axios from 'axios';
 function Feedback() {
 
   const [show, setShow] = useState(false);
-  const [nbrstar, setnbrstar] = useState("0");
 
   const closeModalHandler = () => setShow(false);
   const url = "http://localhost:5000/api/v1/feedbacks";
@@ -39,24 +38,6 @@ function Feedback() {
   const handlestar3input = (e) =>{
     setvalue({...value, star3: e.target.value})
   }
-
-  // try{
-  //   const data = {rate_experience: value.star1,
-  //     payment_satisfaction:value.star2,
-  //     customer_service_satisfaction : value.star3,
-  //     feedback: value.feedback};
-  //   console.log(data);
-  //   const response = await fetch("http://localhost:5000/api/v1/feedbacks" , {
-  //     method: "POST",
-  //     headers: { "Content-type": "application/json" },
-  //     body: JSON.stringify(data)
-  //   });
-  //   console.log(response);
-  // } catch (err){
-  //   console(err.message);
-  // }
-
-
 
 
 
